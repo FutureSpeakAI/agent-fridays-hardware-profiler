@@ -1,0 +1,39 @@
+{
+  "name": "@agent-friday/hardware-profiler",
+  "version": "1.0.0",
+  "description": "Hardware detection and AI model tier recommendation — maps GPU/VRAM/RAM/CPU/disk to a 5-tier system with model requirements and upgrade paths",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "hardware-detection",
+    "gpu-profiler",
+    "vram",
+    "ai-models",
+    "tier-system",
+    "model-requirements",
+    "local-ai"
+  ],
+  "author": "FutureSpeakAI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FutureSpeakAI/agent-fridays-hardware-profiler.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "typescript": "^5.9.3"
+  }
+}
