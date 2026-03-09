@@ -2,11 +2,20 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
-[![npm](https://img.shields.io/npm/v/@agent-friday/hardware-profiler.svg)](https://www.npmjs.com/package/@agent-friday/hardware-profiler)
 
 Detects your system's GPU, VRAM, RAM, CPU, and available disk space, then recommends which AI models can run locally using a 5-tier system (whisper → light → standard → full → sovereign). Each tier specifies exact model requirements with VRAM and disk budgets, CPU-only model support (TTS/STT), and clear upgrade paths showing what hardware improvements unlock which capabilities.
 
-Extracted from [Agent Friday](https://github.com/FutureSpeakAI/nexus-os), an AGI desktop OS by FutureSpeakAI.
+Extracted from [Agent Friday](https://github.com/FutureSpeakAI/Agent-Friday), an AGI desktop OS by FutureSpeakAI.
+
+## Why This Matters
+
+The biggest barrier to running AI locally isn't the models — it's knowing what your hardware can actually handle. Users download a 40GB model only to find their GPU can't load it, or they avoid local AI entirely because they don't know they have enough VRAM for a perfectly capable 8B model.
+
+This package solves the discovery problem. It profiles your system's GPU, VRAM, RAM, CPU, and disk space, then maps that hardware to a concrete tier with specific model recommendations. Instead of "you have 8GB of VRAM," it tells you "you're in the **full** tier — you can run Llama 8B for chat, Moondream for image understanding, Kokoro for multilingual text-to-speech, and Stable Diffusion 1.5 for image generation, with 1.3GB of VRAM headroom."
+
+The tier system also provides **upgrade paths** — if you're at the standard tier, it tells you exactly what hardware upgrade would unlock vision models and image generation, making the cost/benefit of a GPU upgrade concrete and actionable.
+
+If you're building a desktop AI application and need to automatically determine what to run locally vs. send to the cloud, this gives you the hardware-to-model mapping layer.
 
 ## The 5 Tiers
 
@@ -21,7 +30,7 @@ Extracted from [Agent Friday](https://github.com/FutureSpeakAI/nexus-os), an AGI
 ## Installation
 
 ```bash
-npm install @agent-friday/hardware-profiler
+npm install github:FutureSpeakAI/agent-fridays-hardware-profiler
 ```
 
 ## Quick Start
@@ -183,7 +192,7 @@ All supported models with their requirements:
 
 ## Part of Agent Friday
 
-This package is extracted from [Agent Friday](https://github.com/FutureSpeakAI/nexus-os), an AGI desktop OS that runs AI models locally. The hardware profiler and tier recommender are the foundation of Agent Friday's automatic model management system.
+This package is extracted from [Agent Friday](https://github.com/FutureSpeakAI/Agent-Friday), an AGI desktop OS that runs AI models locally. The hardware profiler and tier recommender are the foundation of Agent Friday's automatic model management system.
 
 ## License
 
