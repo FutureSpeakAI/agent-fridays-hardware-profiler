@@ -5,7 +5,7 @@
  * Detects GPU/VRAM/RAM/CPU/disk and recommends which AI models can run locally
  * using a 5-tier system (whisper -> light -> standard -> full -> sovereign).
  *
- * Extracted from Agent Friday (AGI desktop OS) by FutureSpeakAI.
+ * Extracted from Agent Friday — the world's most trustworthy AI assistant, by FutureSpeakAI.
  */
 
 // -- Types -------------------------------------------------------------------

@@ -5,7 +5,7 @@
 
 Detects your system's GPU, VRAM, RAM, CPU, and available disk space, then recommends which AI models can run locally using a 5-tier system (whisper → light → standard → full → sovereign). Each tier specifies exact model requirements with VRAM and disk budgets, CPU-only model support (TTS/STT), and clear upgrade paths showing what hardware improvements unlock which capabilities.
 
-Extracted from [Agent Friday](https://github.com/FutureSpeakAI/Agent-Friday), an AGI desktop OS by FutureSpeakAI.
+Extracted from [Agent Friday](https://github.com/FutureSpeakAI/Agent-Friday), the world's most trustworthy AI assistant, by FutureSpeakAI.
 
 ## Why This Matters
 
@@ -192,7 +192,7 @@ All supported models with their requirements:
 
 ## Part of Agent Friday
 
-This package is extracted from [Agent Friday](https://github.com/FutureSpeakAI/Agent-Friday), an AGI desktop OS that runs AI models locally. The hardware profiler and tier recommender are the foundation of Agent Friday's automatic model management system.
+This package is extracted from [Agent Friday](https://github.com/FutureSpeakAI/Agent-Friday), the world's most trustworthy AI assistant. The hardware profiler and tier recommender are the foundation of Agent Friday's automatic model management system.
 
 ## License
 
